@@ -1,14 +1,32 @@
 function Cards() {
     return (
-        <div>
-            <h1>Редакцын сонголт</h1>
-            <div className="cards">
-                <img src="zurag.jpg" alt="zurg" />
-                <img src="zurag.jpg" alt="zurg" />
-                <img src="zurag.jpg" alt="zurg" />
-                <img src="zurag.jpg" alt="zurg" />
-                <img src="zurag.jpg" alt="zurg" />
-                <img src="zurag.jpg" alt="zurg" />
+        <div class="saaraltai">
+            <div class="tavtaimedee">
+                <div class="choosen-single">
+                    <div class="too">247</div>
+                    <div class="choosen-title">Go Trump Go</div>
+                    <div class="choosen-cat">Category</div>
+                </div>
+                <div class="choosen-single">
+                    <div class="too">247</div>
+                    <div class="choosen-title">Go Trump Go</div>
+                    <div class="choosen-cat">Category</div>
+                </div>
+                <div class="choosen-single">
+                    <div class="too">247</div>
+                    <div class="choosen-title">Go Trump Go</div>
+                    <div class="choosen-cat">Category</div>
+                </div>
+                <div class="choosen-single">
+                    <div class="too">247</div>
+                    <div class="choosen-title">Go Trump Go</div>
+                    <div class="choosen-cat">Category</div>
+                </div>
+                <div class="choosen-single">
+                    <div class="too">247</div>
+                    <div class="choosen-title">Go Trump Go</div>
+                    <div class="choosen-cat">Category</div>
+                </div>
             </div>
         </div>
     );

@@ -7,10 +7,14 @@ function Layout() {
         <>
             <Header />
             <Cards />
-            <News />
-            
+            <News />            
         </>
     )
 }
 
 export default Layout;
+
+function menuOpen(){
+    document.getElementById('neesenmenu').style.display = 'block'; }
+function menuClose(){
+    document.getElementById('neesenmenu').style.display = 'none'; }

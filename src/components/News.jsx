@@ -2,30 +2,60 @@
 
 function News() {
     return (
-        <div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+        <div class="medeenuud">
+            <div class="single-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+            <div class="single-medee reverse-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+            <div class="single-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+            <div class="single-medee reverse-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+            <div class="single-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
-            <div>
-                <h2>garchig</h2>
-                <img src="zurag.jpg" alt="zurg" />
+            <div class="single-medee reverse-medee">
+                <div class="medeeleft">
+                    <p class="category">Category</p>
+                    <h3>Here is the title</h3>
+                </div>
+                <div class="medeeright">
+                    <img src="zurag.jpg" />
+                </div>
             </div>
         </div>
     );

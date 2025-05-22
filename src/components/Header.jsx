@@ -1,51 +1,23 @@
-const Style = {
-    backgroundColor: 'grey',
-    width: '100%',
-}
-
-const headerStyle = {
-    display: 'flex',
-
-}
-
-const headerStyle2 = {
-    display: 'flex',
-}
-
-const icon = {
-    color: '#000',
-}
-
-const imgStyle = {
-    width: '300px',
-    height: '300px',
-}
+import "../App.css";    
 
 function Header() {
   return (
-    <header style={Style}>
-        <div style={headerStyle}>
-            <p>E</p>
-            <img src="logo.png" alt="logo" />
-            <p>|</p>
-            <input type="text" placeholder="Хайлт хийх" />
-            <p>Дараагийн нийтлэл: #RANDOM</p>
-            <button>Маргааш орно</button>
-            <a href="#">
-                <i style={icon} className="fab fa-facebook"></i>
-            </a>
-            <a href="#">
-                <i style={icon} className="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-                <i style={icon} className="fab fa-twitter"></i>
-            </a>
+    <div class="hartai">
+        <div class="topbar">
+            <div><a href="#" onclick="menuOpen();">E</a></div>
+            <div>UNREAD</div>
+            <div><input type="text" placeholder="search" /></div>
+            <div><input type="button" value="BUTTON" /></div>
         </div>
-        <div style={headerStyle2}>
-            <img style={imgStyle} src="zurag.jpg" alt="zurg" />
-            <h1>medee medeelliin delgerengui eh survalj: survalj</h1>
+        <div class="new-medee">
+            <div class="zuragtai">
+                <img src="zurag.jpg" />
+            </div>
+            <div class="contenttoi">
+               <h1>Би хэрхэн ажилдаг вэ? Эрксис инк компанийн аялал жуулчлалын салбарын баг</h1> 
+            </div>
         </div>
-    </header>
+    </div>
   );
 }
 
