@@ -16,7 +16,7 @@ function Header() {
           <button className="menu-btn" onClick={() => setIsSidebarOpen(true)}>☰ Цэс</button>
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         </div>
-        <div>UNREAD</div>
+        <div><img className="logo" src="logo.png" alt="logo" /></div>
         <div><input type="text" placeholder="search" /></div>
         <div><input type="button" value="BUTTON" /></div>
       </div>
