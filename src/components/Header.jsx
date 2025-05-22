@@ -1,15 +1,20 @@
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isSidebarOpen ? "hidden" : "auto";
+  }, [isSidebarOpen]);
 
   return (
     <div className="hartai">
       <div className="topbar">
         <div>
-          <button onClick={() => setMenuOpen(true)}>≡</button>
+          <button className="menu-btn" onClick={() => setIsSidebarOpen(true)}>☰ Цэс</button>
+          <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
         </div>
         <div>UNREAD</div>
         <div><input type="text" placeholder="search" /></div>
@@ -24,15 +29,8 @@ function Header() {
           <h1>Би хэрхэн ажилдаг вэ? Эрксис инк компанийн аялал жуулчлалын салбарын баг</h1>
         </div>
       </div>
-
-      {menuOpen && <Sidebar onClose={() => setMenuOpen(false)} />}
     </div>
   );
 }
-
-useEffect(() => {
-  document.body.style.overflow = menuOpen ? "hidden" : "auto";
-}, [menuOpen]);
-
 
 export default Header;

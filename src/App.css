@@ -1,3 +1,13 @@
+.app {
+  font-family: Arial, sans-serif;
+}
+
+.menu-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px;
+}
 
 .hartai {
     background-color: black;
@@ -22,49 +32,100 @@
     text-decoration: none;
 }
 
-.neesenmenu {
-  position: fixed;       
+.sidebar {
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;          
-  height: 100vh;        
+  left: 100%;
+  width: 100%;
+  height: 100vh;
   background-color: white;
-  z-index: 1000;         
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  color: #000;
+  transition: left 0.3s ease;
+  z-index: 9999;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-.haadagaa {
-  display: flex;
-  justify-content: flex-end;
+.sidebar.open {
+  left: 0;
 }
 
-.menutei {
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-content {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.column {
   flex: 1;
-  margin-top: 2rem;
+  min-width: 200px;
 }
 
-.left a, .right a {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: black;
+.title {
+  font-size: 14px;
+  color: #3b82f6;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
-.neesenmenu .menutei a:hover {
-    color: blue;
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.haadagaa a{
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
+.menu li {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu li span {
+  font-size: 12px;
+  color: gray;
+  margin-left: 6px;
+  font-weight: normal;
+}
+
+.link {
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .sidebar-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .close-btn {
+    top: 10px;
+    left: 10px;
+  }
+  .sidebar {
+    padding: 30px 20px;
+  }
 }
 
 .single-medee {
@@ -150,7 +211,9 @@
 
 .zuragtai img {
     width: 100%;
-    height: 200px;
+    height: 250px;      
+    object-fit: cover; 
+    display: block;
 }
 
 .contenttoi {
@@ -176,5 +239,16 @@
         width: 80%;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .sidebar-content {
+    flex-direction: column;
+    gap: 30px;
+    }
+    .close-btn {
+        top: 10px;
+        left: 10px;
+    }
+    .sidebar {
+        padding: 30px 20px;
     }
 }
