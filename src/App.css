@@ -3,10 +3,12 @@
     background-color: black;
     width: 100%;
 }
+
 .saaraltai {
     background-color: rgb(228, 228, 228);
     width: 100%;
 }
+
 .topbar {
     padding: 10px 20px;
     display: flex;
@@ -14,37 +16,57 @@
     width: 95%;
     justify-content: space-between;
 }
+
 .topbar a {
     color: white;
     text-decoration: none;
 }
+
 .neesenmenu {
-    width: calc(100% - 100px);
-    height: 100vh;
-    background-color: white;
-    color: rgb(63, 63, 63);
-    padding: 100px;
-    position: absolute;
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100vw;          
+  height: 100vh;        
+  background-color: white;
+  z-index: 1000;         
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.neesenmenu .menutei {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+
+.haadagaa {
+  display: flex;
+  justify-content: flex-end;
 }
-.neesenmenu .menutei a {
-    display: block;
-    color: rgb(63, 63, 63);
-    font-size: 45px;
-    text-decoration: none;
+
+.menutei {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+  margin-top: 2rem;
 }
+
+.left a, .right a {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
 .neesenmenu .menutei a:hover {
     color: blue;
 }
+
 .haadagaa a{
     color: black;
     font-size: 20px;
     text-decoration: none;
 }
+
 .single-medee {
     display: flex;
     justify-content: space-between;
@@ -55,28 +77,30 @@
     padding: 30px;
     transition: all 100ms ease;
 }
+
 .single-medee:hover {
     
     translate: 0px 5px;
     box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
 }
+
 .reverse-medee {
     flex-direction: row-reverse;
     margin-left: auto;
 }
-.medeeleft {
 
-}
 .medeeright {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
 }
+
 .medeeright img {
     width: 100%;
     height: auto;
 }
+
 .choosen-single {
     background-color: rgb(42, 20, 20);
     width: calc(20% - 100px);
@@ -89,24 +113,29 @@
     margin-top: -150px;
     transition: all 100ms ease;
 }
+
 .choosen-single:hover {
     margin-top: -160px;
     width: calc(20% - 60px);
     height: 220px;
 }
+
 .choosen-title {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 .choosen-cat {
     background-color: blue;
     border-radius: 20px;
 }
+
 .tavtaimedee {
     display: flex;
     justify-content: space-around;
 }
+
 .new-medee {
     padding: 50px;
     display: flex;
@@ -114,19 +143,23 @@
     margin: 0px auto;
     padding-bottom: 200px;
 }
+
 .zuragtai  {
     width: 40%;
 }
+
 .zuragtai img {
     width: 100%;
     height: 200px;
 }
+
 .contenttoi {
     padding-left: 30px;
     width: 60%;
     color: white;
     font-size: 20px;
 }
+
 @media only screen and (max-width: 768px){
     .new-medee {
         display: block;
